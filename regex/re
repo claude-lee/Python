@@ -1,2 +1,4 @@
 matches() Matches the entire string
 search() Checks to see if there is a match anywhere in the string
+sub() substitues/replaces sub(pattern, repl, string, max=0)
+

@@ -1,7 +1,15 @@
+MATCHING CRITERIA
+***************************************************
 . Matches any character
+? Matches one or zero of the character that preceeds it
 ^ Matches the start of a string
 $ Mathes the end of a string
-\ Any decimal digit character (0-9)
+\d Any decimal digit character (0-9)
+\D Matches any non-digit character; this is equivalent to the class [^0-9].
+\s Matches any whitespace character; this is equivalent to the class [ \t\n\r\f\v].
+\S Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v].
+\w Matches any alphanumeric character; this is equivalent to the class [a-zA-Z0-9_].
+\W Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_].
 + One or more of any that preceeds it (as many as possible)
 [] Matches a single character contained with the brackets (EG: "[ch]at" would match cat, hat but not sat. You can use ranges too [a-z].
 [^ ] Matches a single character NOT contained within the brackets (EG: "[^c]at" would match hat, sat, but not cat
@@ -11,6 +19,13 @@ $ Same as ^ however with end of string
 * Matches the preceeding element zero or more times
 
 
+OPTION FLAGS
+*******************************************************
+re.I Ignore case matching
+re.M Makes $ match the end of a line and ^ match the beginning of a line (rather than end/beginning of string)
+re.S Makes . match any character, even new line character
+re.U interprets in Unicaode
+re.X ignores whitespace within the pattern
 
 tutorial:
 https://www.youtube.com/watch?v=8nMWwy3fvsM
