@@ -1,0 +1,8 @@
+. Matches any character
+^ Matches the start of a string
+$ Mathes the end of a string
+\ Any decimal digit character (0-9)
++ One or more of any that preceeds it (as many as possible)
+
+tutorial:
+https://www.youtube.com/watch?v=8nMWwy3fvsM
