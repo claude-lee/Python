@@ -1,6 +1,7 @@
 MATCHING CRITERIA
 ***************************************************
 . Matches any character
+? Matches one or zero of the character that preceeds it
 ^ Matches the start of a string
 $ Mathes the end of a string
 \d Any decimal digit character (0-9)
