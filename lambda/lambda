@@ -1,0 +1,8 @@
+***************************************
+lambda:
+anonymous function
+***************************************
+what lambda returns is a function
+**************************************
+and here is how you use it:
+lambda (param_1, param_2, ..param_n): param_1 + param_2 + ... + param_n
