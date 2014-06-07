@@ -1,3 +1,5 @@
+MATCHING CRITERIA
+***************************************************
 . Matches any character
 ^ Matches the start of a string
 $ Mathes the end of a string
@@ -11,6 +13,13 @@ $ Same as ^ however with end of string
 * Matches the preceeding element zero or more times
 
 
+OPTION FLAGS
+*******************************************************
+re.I Ignore case matching
+re.M Makes $ match the end of a line and ^ match the beginning of a line (rather than end/beginning of string)
+re.S Makes . match any character, even new line character
+re.U interprets in Unicaode
+re.X ignores whitespace within the pattern
 
 tutorial:
 https://www.youtube.com/watch?v=8nMWwy3fvsM
