@@ -3,6 +3,14 @@
 $ Mathes the end of a string
 \ Any decimal digit character (0-9)
 + One or more of any that preceeds it (as many as possible)
+[] Matches a single character contained with the brackets (EG: "[ch]at" would match cat, hat but not sat. You can use ranges too [a-z].
+[^ ] Matches a single character NOT contained within the brackets (EG: "[^c]at" would match hat, sat, but not cat
+^ Matches the expression if at the start of the string (EG: "^.at" would match cat, hat, sat if located at the start of the string
+$ Same as ^ however with end of string
+() Contains sub expressions
+* Matches the preceeding element zero or more times
+
+
 
 tutorial:
 https://www.youtube.com/watch?v=8nMWwy3fvsM
