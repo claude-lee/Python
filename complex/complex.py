@@ -16,3 +16,28 @@ print "unreadable: " + str(result_y) # unreadable
 readable_result_z = list(result_y)
 
 print str(readable_result_z)
+
+################################################
+
+# so what happens when we take the union of that?
+u = set().union(result_y)
+s = set(result_y)
+print u
+#set([16, 25, 4, 36])
+print s
+#set([16, 25, 4, 36])
+
+################################################
+f(*C)
+# is the same as x, y, z = C
+f(x, y, z)
+# The * says "make it as if the elements of this collection each appear 
+# as a separate argument of the function call", which is what we want.
+
+# We could also do this without * and without union as follows: replace
+
+set().union( *map(y, x(text))
+#with
+set(yrem for xrem in x(text) for yrem in y(xrem))
+########################################################
+ 
