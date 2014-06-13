@@ -18,6 +18,10 @@ $ Same as ^ however with end of string
 () Contains sub expressions
 * Matches the preceeding element zero or more times
 
+(?:...)
+A non-capturing version of regular parentheses. Matches whatever regular expression is inside the parentheses, 
+but the substring matched by the group cannot be retrieved after performing a match or referenced later in the pattern.
+
 
 OPTION FLAGS
 *******************************************************
