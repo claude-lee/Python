@@ -17,6 +17,9 @@ readable_result_z = list(result_y)
 
 print str(readable_result_z)
 
+###############################
+use isinstance() instead of type()
+
 ################################################
 
 # so what happens when we take the union of that?
