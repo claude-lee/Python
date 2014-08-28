@@ -43,4 +43,9 @@ set().union( *map(y, x(text))
 #with
 set(yrem for xrem in x(text) for yrem in y(xrem))
 ########################################################
+
+to import modules from directory stuff, add stuff to the PYTHONPATH variable:
+	
+export PYTHONPATH=$PYTHONPATH:/home/eclaeis/stuff
  
+#######################################################################
