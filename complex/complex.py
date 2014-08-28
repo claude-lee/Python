@@ -49,3 +49,12 @@ to import modules from directory stuff, add stuff to the PYTHONPATH variable:
 export PYTHONPATH=$PYTHONPATH:/home/eclaeis/stuff
  
 #######################################################################
+
+/Documents/Modules/NewProject/MyModule.py
+The PYTHONPATH is a list of directories for your computer to check whenever you type import MyModule into the interpreter.
+
+To add a path, launch ipython and type:
+
+import sys
+sys.path.append("path/to/Modules")
+print sys.path
