@@ -9,3 +9,4 @@ https://www.youtube.com/watch?v=uOzdG3lwcB4
 run pep8 before git commit:
 http://hvelarde.blogspot.se/2012/06/running-pep8-before-any-commit-on-git.html
 
+http://12factor.net/
