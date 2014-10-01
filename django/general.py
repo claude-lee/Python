@@ -15,3 +15,6 @@ python manage.py inspectdb > somefile.txt
 ./manage.py migrate myapp --db-dry-run
  
 ./manage.py migrate --list
+
+$ ./manage.py dbshell
+psql=# CREATE DATABASE djtest; 
