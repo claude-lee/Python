@@ -18,3 +18,6 @@ python manage.py inspectdb > somefile.txt
 
 $ ./manage.py dbshell
 psql=# CREATE DATABASE djtest; 
+
+
+./manage.py schemamigration main --auto --update
