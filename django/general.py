@@ -5,4 +5,8 @@ python manage.py inspectdb > somefile.txt
 ./manage.py shell
 
 
-python manage.py reset app_name
+./manage.py sqlclear app_name | ./manage.py dbshell 
+./manage.py syncdb
+
+./manage.py schemamigration --initial southtut
+./manage.py migrate southtut
