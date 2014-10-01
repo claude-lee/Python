@@ -10,3 +10,8 @@ python manage.py inspectdb > somefile.txt
 
 ./manage.py schemamigration --initial southtut
 ./manage.py migrate southtut
+
+./manage.py schemamigration my_app_name --auto --stdout
+./manage.py migrate myapp --db-dry-run
+ 
+./manage.py migrate --list
