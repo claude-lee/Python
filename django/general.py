@@ -21,3 +21,5 @@ psql=# CREATE DATABASE djtest;
 
 
 ./manage.py schemamigration main --auto --update
+
+rm -rf /usr/local/Cellar/mysql/5.6.20_1/
