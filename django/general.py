@@ -32,3 +32,5 @@ rm -rf ~/Library/PreferencePanes/MySQL*
 sudo rm -rf /Library/Receipts/mysql*
 sudo rm -rf /Library/Receipts/MySQL*
 sudo rm -rf /var/db/receipts/com.mysql.*
+
+./mysql -u root -h localhost -p
