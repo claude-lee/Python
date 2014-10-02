@@ -23,3 +23,12 @@ psql=# CREATE DATABASE djtest;
 ./manage.py schemamigration main --auto --update
 
 rm -rf /usr/local/Cellar/mysql/5.6.20_1/
+sudo rm /usr/local/mysql
+sudo rm -rf /usr/local/mysql*
+sudo rm -rf /Library/StartupItems/MySQLCOM
+sudo rm -rf /Library/PreferencePanes/MySQL*
+vim /etc/hostconfig and removed the line MYSQLCOM=-YES-
+rm -rf ~/Library/PreferencePanes/MySQL*
+sudo rm -rf /Library/Receipts/mysql*
+sudo rm -rf /Library/Receipts/MySQL*
+sudo rm -rf /var/db/receipts/com.mysql.*
