@@ -34,3 +34,10 @@ sudo rm -rf /Library/Receipts/MySQL*
 sudo rm -rf /var/db/receipts/com.mysql.*
 
 ./mysql -u root -h localhost -p
+
+
+
+brew services start postgresql
+and
+
+brew services stop postgresql
