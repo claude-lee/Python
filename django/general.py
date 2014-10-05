@@ -44,3 +44,9 @@ brew services stop postgresql
 
 heroku config | grep HEROKU_POSTGRESQL
 heroku config | grep DATABASE_URL
+
+
+
+ File "/app/.heroku/python/lib/python2.7/site-packages/django/utils/module_loading.py", line 31, in import_by_path
+2014-10-05T10:14:11.831334+00:00 app[web.1]: ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+
