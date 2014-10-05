@@ -41,3 +41,6 @@ brew services start postgresql
 and
 
 brew services stop postgresql
+
+heroku config | grep HEROKU_POSTGRESQL
+heroku config | grep DATABASE_URL
