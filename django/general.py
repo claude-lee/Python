@@ -1,3 +1,7 @@
+
+//--------------------------------------------------
+// Django
+//--------------------------------------------------
 source venv/bin/activate
 ./manage.py runserver &
 
@@ -22,31 +26,19 @@ psql=# CREATE DATABASE djtest;
 
 ./manage.py schemamigration main --auto --update
 
-rm -rf /usr/local/Cellar/mysql/5.6.20_1/
-sudo rm /usr/local/mysql
-sudo rm -rf /usr/local/mysql*
-sudo rm -rf /Library/StartupItems/MySQLCOM
-sudo rm -rf /Library/PreferencePanes/MySQL*
-vim /etc/hostconfig and removed the line MYSQLCOM=-YES-
-rm -rf ~/Library/PreferencePanes/MySQL*
-sudo rm -rf /Library/Receipts/mysql*
-sudo rm -rf /Library/Receipts/MySQL*
-sudo rm -rf /var/db/receipts/com.mysql.*
-
-./mysql -u root -h localhost -p
+- python manage.py validate //– Checks for any errors in the construction of your models.
+- python manage.py sqlcustom app_name //– Outputs any custom SQL statements 
+//(such as table modifications or constraints) that are defined for the application.
+- python manage.py sqlclear app_name //– Outputs the necessary DROP TABLE statements for this app, 
+// according to which tables already exist in your database (if any).
+- python manage.py sqlindexes app_name // – Outputs the CREATE INDEX statements for this app.
+python manage.py sqlall app_name // – A combination of all the SQL from the sql, sqlcustom, and sqlindexes commands.
 
 
-
-brew services start postgresql
-and
-
-brew services stop postgresql
-
+//--------------------------------------------------
+// HEROKU
+//--------------------------------------------------
 heroku config | grep HEROKU_POSTGRESQL
 heroku config | grep DATABASE_URL
-
-
-
- File "/app/.heroku/python/lib/python2.7/site-packages/django/utils/module_loading.py", line 31, in import_by_path
-2014-10-05T10:14:11.831334+00:00 app[web.1]: ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+//--------------------------------------------------
 
