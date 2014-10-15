@@ -33,7 +33,7 @@ psql=# CREATE DATABASE djtest;
 // according to which tables already exist in your database (if any).
 - python manage.py sqlindexes app_name // – Outputs the CREATE INDEX statements for this app.
 python manage.py sqlall app_name // – A combination of all the SQL from the sql, sqlcustom, and sqlindexes commands.
-
+- python manage.py shell
 
 //--------------------------------------------------
 // HEROKU
